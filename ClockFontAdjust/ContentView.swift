@@ -12,7 +12,7 @@ struct ContentView: View {
     /// device orientation
     @State private var isPortrait:Bool = (UIScreen.main.bounds.height > UIScreen.main.bounds.width)
     
-    /// orientation change
+    /// Notification: orientation change
     private let orientationPublisher = NotificationCenter.default.publisher(for: UIDevice.orientationDidChangeNotification)
 
     var body: some View {
