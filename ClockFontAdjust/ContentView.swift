@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+///Text font size will change if device orientation change.
 struct ContentView: View {
     /// device orientation
     @State private var isPortrait:Bool = (UIScreen.main.bounds.height > UIScreen.main.bounds.width)
